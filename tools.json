@@ -1,0 +1,72 @@
+[
+  {
+    "name": "generate_paragraphs",
+    "description": "Generate placeholder text paragraphs for mockups and layout testing. Returns plain text without formatting.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number",
+          "description": "Number of paragraphs to generate (1–10)"
+        },
+        "length": {
+          "type": "string",
+          "enum": [
+            "short",
+            "medium",
+            "long",
+            "verylong"
+          ],
+          "description": "Length of each paragraph: short, medium, long, or verylong"
+        }
+      },
+      "required": [
+        "count",
+        "length"
+      ]
+    }
+  },
+  {
+    "name": "generate_with_options",
+    "description": "Generate formatted placeholder text with headers, code blocks, and lists (HTML). Specify which elements to include: headers, code blocks, unordered lists, ordered lists.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number",
+          "description": "Number of paragraphs to generate (1–10)"
+        },
+        "length": {
+          "type": "string",
+          "enum": [
+            "short",
+            "medium",
+            "long",
+            "verylong"
+          ],
+          "description": "Length of each paragraph"
+        },
+        "headers": {
+          "type": "boolean",
+          "description": "Include random headers (h1–h6)"
+        },
+        "code": {
+          "type": "boolean",
+          "description": "Include code blocks"
+        },
+        "unordered_lists": {
+          "type": "boolean",
+          "description": "Include unordered (bullet) lists"
+        },
+        "ordered_lists": {
+          "type": "boolean",
+          "description": "Include ordered (numbered) lists"
+        }
+      },
+      "required": [
+        "count",
+        "length"
+      ]
+    }
+  }
+]
