@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-lorem",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Lorem MCP — placeholder text, generated locally.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "lorem",
     "gatewaySlug": "lorem",
-    "sourceHash": "v1-a5ae0247c3f7b592c03531c6ca8bd6d7a77edcd0949599d93d3ae0525f938e40",
-    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
+    "sourceHash": "v1-d4675f5dcfed72e0763b8e1e62ddfdf8d660ce898e6761d53fb1ecfbc0aa98a0",
+    "sourceCommit": "236b0a46d91f343fe094da9f499c378e88f78312"
   }
 }
